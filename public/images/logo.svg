@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" fill="white"/>
+  <!-- stylized A -->
+  <path d="M30 95 L60 15 L90 95 L72 95 L60 55 L48 95 Z" fill="#000"/>
+  <!-- red swoosh -->
+  <path d="M20 80 C55 40, 85 35, 110 30" stroke="#e3342f" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
