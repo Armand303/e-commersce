@@ -7,6 +7,7 @@ use App\Http\Controllers\ProductController;
 use Illuminate\Http\Request;
 use App\Models\Product;
 
+
 // Show products on the site root
 Route::get('/', [HomeController::class, 'index']);
 
