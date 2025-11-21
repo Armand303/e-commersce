@@ -2,10 +2,16 @@
     "version": 2,
     "framework": null,
     "functions": { 
-        "api/index.php": { "runtime": "vercel-php@0.7.0" }
+        "api/index.php": { "runtime": "vercel-php@0.7.4" }
     },
+    "engines": {
+    "node": "22.x"      
+  
+  },
+
     "routes": [
         { "src": "/build/(.*)", "dest": "/public/build/" },
+        { "src": "/public/(.*)", "dest": "/public/$1/$2" },
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "public": true,	
@@ -25,11 +31,8 @@
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
-        "DB_CONNECTION": "mysql",
+        "DB_CONNECTION": "pgsql",
         "DB_URL": "postgresql://postgres:h7UKtUxVZrKBy58T@db.myktmihsmfnylpenqidv.supabase.co:5432/postgres ",
-        "DB_PORT": "3307",
-        "DB_DATABASE": "ecommersce_includehe",
-        "DB_USERNAME": "ecommersce_includehe",
         "DB_PASSWORD": "14430bac8bf204c8fdf986c747f303fe81fc332b"
     }
 }
